@@ -1,0 +1,39 @@
+.img_header {
+  height: 40vh;
+}
+.resident__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+ .h1_title {
+  position: absolute;
+ top: 30vh; 
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  font-family: fantasy;
+  font-size: 50px;
+}
+
+.buscador {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+
+.search {
+  border-radius: 0.4rem 0 0 0.4rem;
+}
+
+.search_button {
+  border-radius:  0 0.4rem 0 0.4rem;
+  color: white;
+  background-color: #214247;
+}
+
+.search_button:hover {
+  transform: scale(1.07);
+  
+}
