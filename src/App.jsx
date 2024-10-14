@@ -29,12 +29,16 @@ useEffect( () => {
 
   return (
     <div>
-      <h1 className='h1_title'>RICK AND MORTY</h1>
-      <img className='img_header' src='RICK_MORTY_BILLBOARD_72.jpg'></img>
-      <form className='buscador' onSubmit={handleSubmit}>
+      <header className='header'>
+      <img className='img_header' src='rick-and-morty1.png'></img>
+      </header>
+
+      <section>
+       <form className='buscador' onSubmit={handleSubmit}>
         <input className="search" ref={inputLocation} type='text'/>
         <button className='search_button'> Search</button>
-      </form>
+       </form>
+      </section>
       {
         hasError
           ? <h2>Hey! you must provide and id from 1 to 126</h2>
@@ -50,7 +54,6 @@ useEffect( () => {
             <ResidentCard
             key={url}
             url={url}
-            
             />
             )  )
         }

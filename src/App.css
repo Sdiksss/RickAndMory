@@ -1,5 +1,10 @@
+.header {
+  display: flex;
+}
+
 .img_header {
-  height: 40vh;
+  height: 280px;
+  object-fit:cover;
 }
 .resident__container {
   display: flex;
@@ -36,4 +41,16 @@
 .search_button:hover {
   transform: scale(1.07);
   
+}
+
+@media  (min-width: 1400px) {
+  .img_header {
+    height: 500px;
+  }
+}
+
+@media  (max-width: 800px) {
+  .img_header {
+    height: 120px;
+  }
 }
